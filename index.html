@@ -58,94 +58,179 @@
 
                 <section>
                     <img src="http://blog.howto.gov/wp-content/blogs.dir/23/files/2013/11/Octocat.png">
+
+                    <aside class="notes">
+                        This is the Octocat. It's GitHub's mascot. I don't know why it's their mascot, but I wanted to explain the stickers on my laptop. GitHub is an essential tool for programmers everywhere. GitHub is used for version control. It helps us code collaboratively and work together without losing our minds over whose version of the file is the right version of the file. I'm going to talk about how GitHub does this at a basic level and introduce a workflow for you to get started using GitHub.
+                    </aside>
                 </section>
 
                 <section data-background="#C44D58">
-                    <p>GitHub stores git repositories of text files and records a history of changes to those files.
+                    <p>GitHub stores git repositories of text files and records a history of changes to those files.</p>
+
+                    <aside class="notes">
+                        GitHub stores git repositories of text files and records a history of changes to those files. This is about as basic a sentence as I could write to explain what GitHub does. So I'm going to spend some time unpacking what this sentence means and explaining some key terms in the sentence.
+                    </aside>
                 </section>
 
                 <section data-background="#C44D58">
                     <p class="faded">GitHub stores <strong>git repositories</strong> of text files and records a history of changes to those files.</p>
+
+                    <aside class="notes">
+                        Git repositories is probably the scariest part of that sentence, so let's start there.
+                    </aside>
                 </section>
 
                 <section>
                     <p><strong>Git</strong>Hub is built off of <strong>git</strong>, a version control system.</p>
+
+                    <aside class="notes">
+                        Without getting too technical, GitHub is built off of git, which is a version control system developed by the same guy who made Linux. Git was designed to help software developers all over the world work on open-source projects. Open-source projects such as Linux are projects where anyone can see and contribute to the code. As for what a repository is, it might be helpful to just look at one.
+                    </aside>
                 </section>
 
                 <section>
                     <h1>Tacofancy</h1>
                     <a target="_blank" href="http://www.github.com/sinker/tacofancy"><img src="img/repo.png"></a>
+
+                    <aside class="notes">
+                        Click on Tacofancy, show them around.
+                    </aside>
                 </section>
 
                 <section>
                     <h3 class="jubilat">Git repositories are just folders with files in them.</h3>
+
+                    <aside class="notes">
+                        Despite the scary name, a repository is not much more than a folder. For your purpose, it's good enough to just equate them. What git does is track all of the files within your folder and watch them for changes.
+                    </aside>
                 </section>
 
                 <section>
                     <p>GitHub stores copies of git repositories on its servers and makes git look pretty.</p>
+
+                    <aside class="notes">
+                        So where does GitHub fall in all of this? GitHub stores copies of these folders, or repositories, on its own servers. It takes the information that git processes and makes it look pretty. Also, anyone else can see and copy your git repositories. We'll get into that part more later.
+                    </aside>
                 </section>
 
                 <!-- Example of nested vertical slides -->
                 <section data-background="#C44D58">
                     <p class="faded">GitHub stores git repositories of <strong>text files</strong> and records a history of changes to those files.</p>
+
+                    <aside class="notes">
+                        The next part of this sentence we need to explain are text files. It seems like an innocuous thing, but that's actually a fairly technical term.
+                    </aside>
                 </section>
 
                 <section>
                     <h2>Binary Files</br> vs.</br> Text Files</h2>
+
+                    <aside class="notes">
+                        There are two types of files on your computer: binary files and text files. Well, sort of. Technically, everything is a binary file. What's a binary file?
+                    </aside>
                 </section>
 
                 <section data-background="img/binary.jpg">
+
+                    <aside class="notes">
+                        When you think of code, you probably think of a bunch of 0s and 1s like the Matrix or something. That's actually not all that inaccurate. At its core, computers really don't understand more than binary code — a bunch of 0s and 1s. But you'll never, ever have to deal with that level of computer programming. Super smart people have written high-level programming languages and compilers that make programming more human. But when it comes down to it, every single file and program on your computer is translated to a bunch of 0s and 1s.
                 </section>
 
                 <section>
                     <h3 class="jubilat">Text files only contain the binary code for text.</h3>
+
+                    <aside class="notes">
+                        What's special about text files is that they only contain the binary code for text: letters, numbers and symbols. That makes them a very particular subclass of binary files. It's tricky to know what is a text file, though. A Word document, for example, is not a text file. Word stores all of the information about what font you're using, the color, the margins, the pages and a whole bunch more. Because that all has to be stored in the same binary file, Word documents do not qualify as text files.
                 </section>
 
                 <section>
                     <h3 class="jubilat">All the code you write will be in a text file.</h3>
+
+                    <aside class="notes">
+                        But all the code you write will be in a text file. And this is the type of file that git and GitHub interpret.
+                    </aside>
                 </section>
 
                 <section data-background="#C44D58">
                     <p class="faded">GitHub stores git repositories of text files and records a <strong>history of changes</strong> to those files.</p>
+
+                    <aside class="notes">
+                        If you're wondering why it is important that git reads text files and not other types of binary files, it's for the purpose of recording a history of changes.
+                    </aside>
                 </section>
 
                 <section>
                     <h3 class="jubilat">Git knows how to read text.</h3>
+
+                    <aside class="notes">
+                        Because the binary for text files is so simple, git knows how to read text.
+                    </aside>
                 </section>
 
                 <section>
                     <p>Git can show you <em>what changed</em> in a file.</p>
 
                     <p>This is called a <a target="_blank" href="https://github.com/nprapps/borders-map/commit/b39a6faf12baf2a68d9009f87dbc00239ade7ee9">diff</a>.
+
+                    <aside class="notes">
+                        That means that, between versions of a file, git can show you what changed. It displays this information in what is known as a diff.
+                    </aside>
                 </section>
 
                 <section>
                     <p>Over time, we can see a <a href="https://github.com/nprapps/borders-map/commits/master?page=2">history</a> of everything that happened in a repository.</p>
+
+                    <aside class="notes">
+                        Over time, as changes continually get added to a repository, we can see a history of what changed and who changed it within a repository. That's incredibly powerful, and its usefulness is pretty endless. If you're working on a project with a few people, and you're confused about a particular line of code, you can see who added the line. If you remove something from the code that you realize actually needs to be added back in, it's easy to go back into the history and retrieve that part. Finally, and most importantly, with everyone on a project pushing their most recent changes to GitHub, GitHub always has the most recent, canonical copy of a file. Everybody can stay up to date on a project.
+                    </aside>
                 </section>
 
                 <section data-background="#C44D58">
                     <p class="faded">GitHub stores git repositories of text files and records a history of changes to those files.</p>
+
+                    <aside class="notes">
+                        Here's that sentence one more time. GitHub stores git repositories — folders with special powers given to them by git — of text files — those files that just have text in them and nothing more — and records a history of changes to those files.
                 </section>
 
                 <section data-background="#C44D58">
                     <h1>Who cares?</h1>
+
+                    <aside class="notes">
+                        It's hard to explain just how vital this is until you've started coding, and I think version control will make a lot more sense when you start working on your group projects. But quickly, I want to emphasize a couple points.
+                    </aside>
                 </section>
 
                 <section>
                     <p>No more <br><code>story-final-REALLY-THIS-TIME.html</code></p>
+
+                    <aside class="notes">
+                        You've all worked on group projects in the past where you send Word documents back and forth over email, and it's impossible to know whose version is the latest version and which edits from which person are supposed to be in the final document. GitHub solves that problem.
+                    </aside>
                 </section>
 
                 <section>
                     <h3 class="jubilat">GitHub makes collaborative coding possible.</h3>
                     <img src="https://octodex.github.com/images/collabocats.jpg">
+
+                    <aside class="notes">
+                        GitHub gives your code a central location. It's easy to get people involved in a project and collaborating quickly.
+                    </aside>
                 </section>
 
                 <section data-background="#C44D58">
                     <h1>Okay, How?</h1>
+
+                    <aside class="notes">
+                        Okay, it's time to teach you the workflow we'll be using for lessons. There will be a different workflow for group projects, but we'll get there later.
+                    </aside>
                 </section>
 
                 <section>
                     <p>We're going to use <a target="_blank" href="http://github.com/tylerunclass/intro-to-git">bit.ly/unclass-git</a></p>
+
+                    <aside class="notes">
+                        You will have a quick assignment with GitHub to do between now and Wednesday. If you followed my email and setup the GitHub application on your computer, you can try to follow along now and get it done before class is over. Either way, it shouldn't take you very long. We're going to use this repository I set up, which is at bit dot ly slash unclass dash git.
+                    </aside>
                 </section>
 
                 <section>
@@ -158,6 +243,10 @@
                         <li>Push</li>
                         <li>Submit (a pull request)</li>
                     </ul>
+
+                    <aside class="notes">
+                        There are five verbs of git that we're going to be using. There are more, but these will do for now.
+                    </aside>
                 </section>
 
                 <section>
@@ -165,9 +254,17 @@
                         <dt>Fork</dt>
                         <dd>To copy a repository from a user's GitHub account to your own GitHub account.</dd>
                     </dl>
+
+                    <aside class="notes">
+                        Fork means to copy a repository from a user's GitHub account to your own GitHub account. This is useful when you cannot or are not allowed to contribute directly to the original repository. Forking creates a copy for yourself that you can do anything to. For all of our lessons, we will start with forking the lesson repository.
+                    </aside>
                 </section>
                 <section>
                     <img class="freezeframe" src="img/fork.gif">
+
+                    <aside class="notes">
+                        Forking is really easy. You just go to the GitHub page for the repository you want to fork, and click the "Fork" button on the top right.
+                    </aside>
                 </section>
 
                 <section>
@@ -177,15 +274,27 @@
                         <dt>Pull</dt>
                         <dd>To copy the most recent changes to a repository from Github to your local computer</dd>
                     </dl>
+
+                    <aside class="notes">
+                        The next verb is actually two verbs, but they're related. When you want to start working on a repository on your own computer, you clone it. That means you copy the entire repository from GitHub to your local computer. If you're working collaboratively on a project, and someone uploads changes to GitHub, you will pull the most recent changes from GitHub. Pulling doesn't download the entire repository; it just gets the most recent changes. For most of our lessons, you will only interact with cloning. On group projects, pulling will be vital.
+                    </aside>
                 </section>
 
                 <section>
                     <img class="freezeframe" src="img/clone.gif">
+
+                    <aside class="notes">
+                        Cloning is also really simple. In the GitHub app, you click on your GitHub.com account and find the repository you just forked. Then, you click "Clone to Computer." The application will ask you where you want to save the repository, so choose wherever you want it to go and let it download the repository. Then, you should see it in the Repostories section under "This Computer" in the sidebar. Click on the arrow that leads you into the repository.
+                    </aside>
                 </section>
 
                 <section>
                     <h2>Make changes</h2>
                     <img class="freezeframe" src="img/change.gif">
+
+                    <aside class="notes">
+                        Once you have the repository on your computer, you are free to make changes to any file that you want. In this repository, there is a file called myname.txt where I have some information for you to fill out. Just edit that file with your information and save it. I'm using a text editor — we'll get to that in later classes — but you should be able to open it in TextEdit on a Mac or in Notepad on Windows and edit it just fine.
+                    </aside>
                 </section>
 
                 <section>
@@ -193,10 +302,17 @@
                         <dt>Commit</dt>
                         <dd>To add and describe changes of files to a repository</dd>
                     </dl>
+
+                    <aside class="notes">
+                        For git to recognize the changes you made, you have to make what's called a commit. A commit adds and describes changes of files to a repository.
+                    </aside>
                 </section>
 
                 <section>
                     <img class="freezeframe" src="img/commit.gif">
+
+                    <aside class="notes">
+                        Back in the GitHub app, in the "Changes" section of the repository in the GitHub app, GitHub should already realize that you've changed myname.txt. Just add a summary of the changes you made and click "Commit".
                 </section>
 
                 <section>
@@ -204,10 +320,18 @@
                         <dt>Push</dt>
                         <dd>To send commits made locally to GitHub's servers</dd>
                     </dl>
+
+                    <aside class="notes">
+                        While we have made a commit to our local repository, we haven't actually pushed the change to GitHub's servers. That is done in a separate process called pushing.
+                    </aside>
                 </section>
 
                 <section>
                     <img class="freezeframe" src="img/push.gif">
+
+                    <aside class="notes">
+                        The GitHub app conflates pulling and pushing into one action called syncing. So we're going to press the sync button to push our changes to GitHub. Technically, the app is also seeing if GitHub has more recent changes for you to pull into your local repository as well.
+                    </aside>
                 </section>
 
                 <section>
@@ -215,10 +339,18 @@
                         <dt>Submit a pull request</dt>
                         <dd>To ask the owner of the original repository to merge changes from your forked repository into the original repository.</dd>
                     </dl>
+
+                    <aside class="notes">
+                        The final verb here requires the most explanation. Submitting a pull request is done when you've forked a repository and made changes that you want to be merged back into the original repository. This notifies the owner of the original repo and shows them the changes you've made through diffs. We're going to use this as a submission process for assignments. Your pull requests will probably not be merged, but it's a good way for us to see the work you've done.
+                    </aside>
                 </section>
 
                 <section>
                     <img class="freezeframe" src="img/pullrequest.gif">
+
+                    <aside class="notes">
+                        On the GitHub page for *your forked repository*, find the Pull Request button, then click the "Create Pull Request" button on the next page. Finally, summarize the pull request you are making and send it along to the original repository owner.
+                    </aside>
                 </section>
 
                 <section>
@@ -231,6 +363,12 @@
                         <li>Commit and push your changes</li>
                         <li>Submit a pull request</li>
                     </ul>
+
+                    <p>Get these slides at <a href="http://tylerjfisher.com/gitintro">tylerjfisher.com/gitintro</a>
+
+                    <aside class="notes">
+                        So, your assignment is to do what I just demonstrated up here. You fork the repository I created, clone it to your computer, make the appropriate changes to myname.txt, commit and push your changes, and submit a pull request so I can see what you did.
+                    </aside>
                 </section>
             </div>
 
